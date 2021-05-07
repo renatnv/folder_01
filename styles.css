@@ -1,0 +1,55 @@
+
+/* Copyright © 2021 Renat Gazizov. All rights reserved. */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Tahoma", "Helvetica";
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-align: inherit;
+    line-height: 100%;
+    color: inherit;
+    background: none;
+    border: 0;
+    outline: 0;
+}
+
+body { padding: 40px 20px; }
+
+h1 { font-size: 150%; font-weight: bold; }
+
+p { display: flex; flex-wrap: nowrap; align-items: center; margin: 7px 0; }
+
+table { width: 100%; max-width: 1000px; margin-top: 20px; background: #bbb; border-spacing: 1px; border-collapse: separate; }
+table thead { font-weight: 600; text-align: center; color: #333; background: #ccc; }
+table tr { height: 40px; }
+table tr td { padding: 5px 10px; }
+table tr td:first-child { width: 50px; text-align: center; }
+table tbody tr:nth-child(even) { background: #eee; }
+table tbody tr:nth-child(odd) { background: #fff; }
+
+input { padding: 5px; vertical-align: middle; border: 1px solid #aaa; }
+input[type=checkbox] { width: 18px; height: 18px; }
+input[type=checkbox] + span { margin-left: 7px; vertical-align: middle; }
+input[type=text] { width: 100%; margin-bottom: 10px; }
+
+.hide { display: none; }
+
+#menuButtonMain { position: relative; width: 250px; margin-top: 30px; padding: 5px; border: 1px solid #aaa; cursor: pointer; z-index: 5; }
+#menuButtonMain  > span:last-child { position: absolute; right: 5px; }
+#menuLabelMain { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; }
+#menuContainer { position: absolute; margin-top: 5px; margin-right: 20px; padding: 20px; background: #fff; border: 1px solid #bbb; z-index: 5; }
+#menuContainer > div { min-width: 270px; max-height: 205px; overflow-y: auto; }
+#menuButtonFilter { margin-top: 17px; padding: 5px 10px; white-space: nowrap; border: 1px solid #777; cursor: pointer; }
+#menuButtonFilter:hover { text-decoration: none; color: #999; border-color: #999; }
+.menuSelectAll { font-weight: bold; }
